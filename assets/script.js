@@ -63,9 +63,12 @@ if (isUpperCase){
 if (isNumber){
   userChoice = userChoice.concat(numbers);
 }
+console.log("hello", userChoice, passLength);  //used for testing
+writePassword(passLength, userChoice);
+}
 
 function writePassword(length, choice) {
-  console.log("goodnight", length, choice)
+  console.log("hello", length, choice)
 
 
   var password = "";
@@ -74,4 +77,4 @@ for ( var i = 0; i < length; i++) { // for loop to make password based off of th
   }  
   createPassword(password); //finally displays password in the box.
 }
-}
+
